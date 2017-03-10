@@ -1,6 +1,8 @@
-document.getElementByClassName("w3-item-bar").click = function(){
+var barButton = document.getElementByClassName("w3-item-bar");
 
-};
+for (var i = 0; i < barButton.length; i++) {
+	barButton[i].addEventListener("click",openTab(event,this.id));
+}
 
 function openTab(event,tabContent){
 	var i;
