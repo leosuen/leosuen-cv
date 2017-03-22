@@ -23,15 +23,7 @@ function runProgressBar(lang,param){
 	var width = 1;
 	var progress = setInterval(run,10);
 	function run(){
-		if (width == param-20) {
-			clearInterval(progress);
-			progress = setInterval(run,100);
-		}
-		else if(width == param-3){
-			clearInterval(progress);
-			progress = setInterval(run,1000);
-		}
-		else if (width == param) {
+		if (width == param) {
 			clearInterval(progress);
 		}
 		else{
